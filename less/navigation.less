@@ -2,20 +2,28 @@
 header {
     width: 100%;
     display: flex;
+    border-bottom: @borders;
+     nav {
+        margin-top: 40px; 
+        margin-bottom: 20px;
+        justify-content: space-between;
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color:black;
+            a:hover {
+                text-decoration: underline;
+                color:grey;
+            }
+        }
+    }
+}
+.nav-txt{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: @borders;
 }
 
-header nav {
-    margin-top: 40px; 
-    justify-content: space-between;
-    display: flex;
-}
 
-header nav a {
-    text-decoration: none;
-    color:black;
-}
 
-header nav a:hover {
-    text-decoration: underline;
-    color:grey;
-}
