@@ -305,12 +305,12 @@ a:hover {
   font-size: 2rem;
   border-radius: 12px;
   width: 80%;
-  background-color: rgba(0, 153, 255, 0.671);
+  background-color: #009999;
   color: white;
 }
 .home .content-pick .destination button:hover {
   background-color: white;
-  color: rgba(0, 153, 255, 0.671);
+  color: #009999;
 }
 @media (max-width:500px) {
   .home .content-pick {
