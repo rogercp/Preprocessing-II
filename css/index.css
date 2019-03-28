@@ -169,19 +169,22 @@ img {
   margin: 0 auto;
 }
 header {
-  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed silver;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  justify-content: space-between;
+  width: 40%;
   display: flex;
+  justify-content: space-around;
 }
 header nav a {
   text-decoration: none;
   color: black;
+  font-size: 1.8rem;
 }
 header nav a a:hover {
   text-decoration: underline;
@@ -190,7 +193,7 @@ header nav a a:hover {
 .nav-txt {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed silver;
 }
 .footer {
   width: 100%;
