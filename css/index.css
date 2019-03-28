@@ -168,17 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main {
+  margin: 0 3rem;
+}
 header {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-bottom: 2px dashed silver;
   justify-content: space-between;
   align-items: center;
 }
 header nav {
-  width: 40%;
+  width: 50%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 header nav a {
@@ -186,7 +192,22 @@ header nav a {
   color: black;
   font-size: 1.8rem;
 }
-header nav a a:hover {
+@media (max-width:500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+a:hover {
   text-decoration: underline;
   color: grey;
 }
@@ -223,6 +244,21 @@ header nav a a:hover {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  .home .content-section .text-content {
+    width: 95%;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  .home .content-section .img-content {
+    width: 95%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -235,12 +271,27 @@ header nav a a:hover {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content .text-content {
+    order: 1;
+  }
+}
+@media (max-width:500px) {
+  .home .inverse-content .img-content {
+    order: -1;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 95%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -268,4 +319,19 @@ header nav a a:hover {
 .home .content-pick .destination button:hover {
   background-color: white;
   color: rgba(0, 153, 255, 0.671);
+}
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  .home .content-pick .destination {
+    width: 95%;
+  }
+}
+@media (max-width:500px) and (max-width:500px) and (max-width:500px) {
+  .home .content-pick .destination button {
+    width: 95%;
+  }
 }
