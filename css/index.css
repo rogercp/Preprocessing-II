@@ -252,11 +252,13 @@ a:hover {
 @media (max-width:500px) and (max-width:500px) {
   .home .content-section .text-content {
     width: 95%;
+    order: 1;
   }
 }
 @media (max-width:500px) and (max-width:500px) {
   .home .content-section .img-content {
     width: 95%;
+    order: 2;
   }
 }
 .home .inverse-content {
@@ -270,16 +272,6 @@ a:hover {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
-}
-@media (max-width:500px) {
-  .home .inverse-content .text-content {
-    order: 1;
-  }
-}
-@media (max-width:500px) {
-  .home .inverse-content .img-content {
-    order: -1;
-  }
 }
 .home .content-destination {
   width: 75%;

@@ -26,11 +26,14 @@
           @media @mobile{
             .text-content{
               width: 95%;
+              order: 1;
+              
             }
           }
           @media @mobile{
             .img-content{
               width: 95%;
+              order: 2;
             }
           }
         }
@@ -55,16 +58,7 @@
       
     }
   }
-  @media @mobile{
-    .inverse-content .text-content{
-      order: 1;
-    }
-  }
-  @media @mobile{
-     .inverse-content .img-content{
-      order: -1;
-    }
-  }
+  
 
 
 
