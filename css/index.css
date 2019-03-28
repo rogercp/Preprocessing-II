@@ -224,4 +224,21 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home .content-pick .destination button {
+  display: block;
+  cursor: pointer;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: 98%;
+  background-color: rgba(0, 153, 255, 0.671);
+  color: white;
+}
+.home .content-pick .destination button:hover {
+  background-color: white;
+  color: rgba(0, 153, 255, 0.671);
 }
